@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apponfluidz.bvp.MainActivity"
+    android:background="#1f2025">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/timetable_layout"
+        android:layout_above="@+id/navigationBarLayout"
+        android:background="#1f2025">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/events_layout"
+        android:layout_above="@+id/navigationBarLayout"
+        android:background="#1f2025">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/cllgselectionimage_layout">
+
+            <TextView
+                android:text="BVCOE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bvcoe_image"
+                android:layout_weight=".5"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:background="@drawable/bvcoe_image"
+                android:shadowColor="#000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="5"/>
+
+            <TextView
+                android:text="BVIMR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bvimr_image"
+                android:layout_weight=".5"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:background="@drawable/bvimr_image"
+                android:shadowColor="#000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="2.0"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/profile_layout"
+        android:layout_above="@+id/navigationBarLayout"
+        android:background="#1f2025">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profilecards_layout"
+            android:layout_below="@+id/details_layout">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/details_layout"
+            android:gravity="center_vertical"
+            android:layout_height="164dp"
+            android:shadowColor="#000000">
+
+            <ImageView
+                app:srcCompat="@drawable/maleavatar"
+                android:id="@+id/avatar"
+                android:scaleY="1"
+                android:layout_width="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:text="Manav jain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginStart="17dp"
+                android:layout_alignTop="@+id/avatar"
+                android:layout_toEndOf="@+id/avatar" />
+
+            <TextView
+                android:text="022####2715\nCSE EVENING\nSEMESTER 3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_below="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#17181b"
+        android:id="@+id/navigationBarLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingTop="10dp"
+            android:onClick="eventsListener">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/eventsicon"
+                android:id="@+id/eventsListener"
+                android:layout_weight="1"
+                android:onClick="eventsListener" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="15dp"
+                android:paddingTop="0dp"
+                android:background="#2c6dcf"
+                android:layout_marginTop="5dp"
+                android:id="@+id/eventLine"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:onClick="profileListener">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/profileicon"
+                android:id="@+id/profileListener"
+                android:layout_weight="1"
+                android:onClick="profileListener" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="15dp"
+                android:paddingTop="0dp"
+                android:background="#2c6dcf"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profileLine"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:onClick="timeTableListener">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/timetableicon"
+                android:id="@+id/timetableListener"
+                android:layout_weight="1"
+                android:onClick="timeTableListener" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="15dp"
+                android:paddingTop="0dp"
+                android:background="#2c6dcf"
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetableLine"
+                android:saveEnabled="false"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

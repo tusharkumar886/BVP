@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "801694366988",
+    "firebase_url": "https://mybvp-9539b.firebaseio.com",
+    "project_id": "mybvp-9539b",
+    "storage_bucket": "mybvp-9539b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801694366988:android:80b52fcb6ad9f902",
+        "android_client_info": {
+          "package_name": "com.hungryhackers.bvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801694366988-dq21t76d7nf5amd8qi4aindenml0gle4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPiil_lFTRzNhQ5Ar_v-KT4pBM3TLLV8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

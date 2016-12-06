@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apponfluidz.bvp.MainActivity"
+    android:background="#1f2025">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/events_layout"
+        android:layout_above="@+id/navigationBarLayout"
+        android:background="#1f2025">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/cllgselectionimage_layout">
+
+            <TextView
+                android:text="BVCOE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bvcoe_image"
+                android:layout_weight=".5"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:background="@drawable/bvcoe_image"
+                android:shadowColor="#000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3"
+                android:shadowRadius="1"/>
+
+            <TextView
+                android:text="BVIMR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bvimr_image"
+                android:layout_weight=".5"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:background="@drawable/bvimr_image" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#17181b"
+        android:id="@+id/navigationBarLayout">
+
+    </LinearLayout>
+
+</RelativeLayout>
