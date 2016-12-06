@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:background="#1f2025">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/heading"
+            android:text="Advanced Java" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#fff"
+            android:text="Jaspreeti Singh  (10 A.M. - 11 A.M.)" />
+
+        <TextView style="@style/heading"
+            android:text="Networking"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginBottom="16dp"
+            android:text="Dr. Jyotsna Yadav  (11 A.M. - 12 A.M.)" />
+
+        <TextView style="@style/heading"
+            android:text="Break"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#fff"
+            android:text="(12 A.M. - 1 P.M.)" />
+
+        <TextView style="@style/heading"
+            android:text="FEDT"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#fff"
+            android:text="Rahul Johari  (2 P.M. - 3 P.M.)" />
+    </LinearLayout>
+</ScrollView>

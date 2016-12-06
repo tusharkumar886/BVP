@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BVPMate</string>
+    <string name="title_activity_time_table">Time Table</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="Subjects">
+        <item>Maths</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Computer</item>
+        <item>English</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
